@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/result_page') do
-  @coin = params.fetch('coin').to_i().coin_combinations()
+  @coin = params.fetch('coin').to_i().coin_combinations()  
   erb(:coin)
 end
